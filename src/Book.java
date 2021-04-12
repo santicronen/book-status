@@ -3,9 +3,19 @@ import java.util.Scanner;
 public class Book { // class declaration
     Scanner scanInput = new Scanner(System.in); // input object
     // attributes declaration
-    int id;
+    private int id;
     String name;
     String author;
+
+    public Book(int id, String name, String author){ // constructor method
+        this.id = id; // this = reference for actual object // static attribute
+        this.name = name;
+        this.author = author;
+    }
+
+    public int getId(){ // get method
+        return id;
+    }
 
     public int input() {
         System.out.println("Insert ID (0-2): ");
@@ -15,7 +25,6 @@ public class Book { // class declaration
 
         return option; // return statement
     }
-
 
     // book status methods
     public void available() {
