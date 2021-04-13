@@ -13,8 +13,12 @@ public class Book { // class declaration
         this.author = author;
     }
 
-    public int getId(){ // get method
+    public int getId() { // get method
         return id;
+    }
+
+    public void setId(int id) { // set method
+        this.id = id;
     }
 
     public int input() {
